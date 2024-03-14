@@ -1,0 +1,367 @@
+body, 
+html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    top: 10px;
+    left: 0;
+    position: fixed;
+   
+}
+
+ 
+footer {
+  background-color: #676666;
+  color: #100e0e;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header {
+    background: url('BGG.jpeg') no-repeat center center/cover;
+    color: #0a0a0a;
+    padding-top: 10px;
+    min-height: 600px;
+    border-bottom: 1px solid #ffffff;
+    filter: brightness(100%)
+    
+}
+.logo {
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 90px; /* Adjust based on your logo's size */
+    margin-right: 20px; 
+    filter: brightness(100%) /* Spacing between logo and nav */
+}
+
+header h3 {
+    float: left;
+    margin-left: 90px;
+    
+}
+main {
+    text-align: center; /* Center text within the main element */
+    padding: 20px; /* Add some padding around the content */
+    filter: brightness(100px)
+}
+
+h1 {
+    color: #752206; /* Example color for the heading */
+    margin: 50px 0; 
+    font-size: 50px;
+    font-style: bold;
+    filter: brightness(300%)
+    /* Add top and bottom margins to the heading */
+}
+
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+header nav ul li a {
+    color: #4006b4;
+    text-decoration: none;
+}
+
+#ordernowBtn {
+    background-color: #8cafe8; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#ordernowBtn:hover {
+    background-color: #0056b3; /* Darker shade on hover for better UX */
+}
+
+#medicine-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+}
+
+.medicine {
+  width: calc(25% - 25px); /* Adjusted to fit 4 in a row */
+  margin: 0 5px 10px; /* Adjusted margin to create space between images */
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.medicine img {
+  width: 100%;
+  height: 80%;
+  display: block;
+  border-bottom: 2px solid #3498db;
+  transition: transform 0.3s ease-in-out;
+}
+
+.medicine:hover {
+  transform: scale(1.05);
+  border-color: #27ae60;
+}
+
+.medicine-description {
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.medicine:hover .medicine-description {
+  background-color: #3498db;
+  color: #fff;
+}
+nav ul li.active a {
+  background-color: #e06262; /* Set active background color */
+}
+
+
+
+
+/* Additional styling for other sections and responsiveness */
+
+
+
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the header */
+header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    background-color: #007bff; /* Example background color */
+    color: white; /* Text color */
+    padding: 40px 300px; /* Padding around the header */
+}
+
+/* Logo specific styling */
+.logo {
+    width: 80px; /* Adjust the size of your logo */
+    height: auto; /* Maintain aspect ratio */
+    
+    margin-right: 20px; /* Space between logo and the title/nav */
+}
+
+/* Container for the title and navigation */
+.container {
+    width: 100%; /* Take up the rest of the header space */
+    display: flex;
+    justify-content: space-between; /* Space between title and navigation */
+    align-items: center; /* Align items vertically */
+}
+
+/* Styling for the navigation menu */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Display the list items inline */
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* Space between each menu item */
+}
+
+nav ul li a {
+    color: white; /* Text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Padding around links for a larger click area */
+}
+
+nav ul li a:hover {
+    background-color: #0056b3; /* Color change on hover for better UX */
+}
+
+
+
+
+
+#about-us {
+    text-align: center;
+    padding: 80px 10px; /* Increased padding for a more spacious look */
+    background-color: #fff ;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .about-content h2 {
+    color: #1875bc;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  
+    text-transform: uppercase; /* Uppercase heading text for emphasis */
+  }
+  
+  .about-content p {
+    line-height: 1.8;
+    margin-bottom: 20px; /* Increased bottom margin for better spacing */
+    color: #555;
+  }
+  
+  .about-content blockquote {
+    font-style: italic;
+    margin: 20px 0;
+    color: #555;
+  }
+  
+  .about-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .about-images img {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px; /* Increased margin for better separation between images */
+    border-radius: 12px; /* Larger border-radius for a more rounded look */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased box-shadow for depth */
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+  }
+  
+  .about-images img:hover {
+    transform: scale(1.1); /* Slightly increased scale on hover for more impact */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* Increased box-shadow on hover */
+  }
+
+
+
+/* Contract Us*/
+#contact-us {
+    text-align: center;
+    padding: 80px 0;
+    background-color: #f9f9f9;
+  }
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* Align menu items to the right */
+  }
+  nav a {
+    text-decoration: none;
+    color: #61b8ba; /* Set text color */
+    padding: 8px 15px;
+    border-radius: 5px;
+    left: 200px;
+    margin-left: 10px; /* Add space between menu items (optional) */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  nav a:hover {
+    background-color:#0056b3;; /* Set hover background color */
+  }
+  nav ul li.active a {
+    background-color: #555; /* Set active background color */
+  }
+  
+  
+  .contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    color: #4a8ab5;
+  }
+  
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #3cd6e7; /* Attractive red color */
+    color: #fff;
+    padding: 20px 30px;
+    border: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #a9cad5; /* Darker red on hover */
+  }
+  .anim{
+    opacity: 0;
+    transform: translateY(90px);
+    animation: moveup 0.5s linear forwards;
+    }
+    @keyframes moveup{
+      100%{
+        opacity: 1;
+        transform: translateY(30px);
+      }
+    }
+    
+
+
+  
+  
